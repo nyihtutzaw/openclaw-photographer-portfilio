@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+### Fixed
+- Wired the dark-mode selector so the theme toggle visually switches the portfolio styles
+
 ## [0.2.0] - 2026-03-11
 ### Added
 - Persistent light and dark theme toggle for the portfolio experience

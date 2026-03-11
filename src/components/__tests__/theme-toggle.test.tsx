@@ -21,12 +21,14 @@ describe("ThemeToggle", () => {
 
     expect(button).toHaveTextContent(/dark mode/i);
     expect(document.documentElement.dataset.theme).toBe("light");
+    expect(document.documentElement).not.toHaveClass("dark");
 
     await user.click(button);
 
     expect(button).toHaveTextContent(/light mode/i);
     expect(button).toHaveAttribute("aria-pressed", "true");
     expect(document.documentElement.dataset.theme).toBe("dark");
+    expect(document.documentElement).toHaveClass("dark");
     expect(window.localStorage.getItem("portfolio-theme")).toBe("dark");
   });
 
@@ -41,6 +43,7 @@ describe("ThemeToggle", () => {
 
     expect(button).toHaveTextContent(/light mode/i);
     expect(document.documentElement.dataset.theme).toBe("dark");
+    expect(document.documentElement).toHaveClass("dark");
     expect(button).toHaveAttribute("aria-pressed", "true");
   });
 });
