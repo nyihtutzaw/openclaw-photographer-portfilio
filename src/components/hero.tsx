@@ -4,20 +4,20 @@ export function Hero() {
   return (
     <section className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
       <div className="space-y-6">
-        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-700">
+        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-700 dark:text-amber-300">
           Photographer Portfolio
         </p>
         <div className="space-y-4">
-          <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-stone-950 sm:text-6xl">
+          <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-stone-950 sm:text-6xl dark:text-white">
             {photographerProfile.name}
           </h1>
-          <p className="text-xl text-stone-700 sm:text-2xl">
+          <p className="text-xl text-stone-700 sm:text-2xl dark:text-stone-200">
             {photographerProfile.title}
           </p>
-          <p className="max-w-2xl text-lg leading-8 text-stone-600">
+          <p className="max-w-2xl text-lg leading-8 text-stone-600 dark:text-stone-300">
             {photographerProfile.tagline}
           </p>
-          <p className="max-w-2xl text-base leading-7 text-stone-500">
+          <p className="max-w-2xl text-base leading-7 text-stone-500 dark:text-stone-400">
             {photographerProfile.intro}
           </p>
         </div>
@@ -25,24 +25,24 @@ export function Hero() {
         <div className="flex flex-wrap gap-4">
           <a
             href="#gallery"
-            className="rounded-full bg-stone-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800"
+            className="rounded-full bg-stone-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-800 dark:bg-white dark:text-stone-950 dark:hover:bg-stone-200"
           >
             View Gallery
           </a>
           <a
             href="#contact"
-            className="rounded-full border border-stone-300 px-6 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-950 hover:text-stone-950"
+            className="rounded-full border border-stone-300 px-6 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-950 hover:text-stone-950 dark:border-stone-600 dark:text-stone-200 dark:hover:border-stone-300 dark:hover:text-white"
           >
             Book a Session
           </a>
         </div>
       </div>
 
-      <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/70 p-6 shadow-[0_30px_80px_rgba(41,37,36,0.12)] backdrop-blur">
+      <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/70 p-6 shadow-[0_30px_80px_rgba(41,37,36,0.12)] backdrop-blur dark:border-stone-700/80 dark:bg-stone-900/70 dark:shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(251,191,36,0.22),_transparent_45%),radial-gradient(circle_at_bottom_left,_rgba(251,146,60,0.22),_transparent_35%)]" />
-        <div className="relative flex min-h-[420px] flex-col justify-between rounded-[1.5rem] bg-gradient-to-br from-stone-900 via-stone-800 to-stone-700 p-8 text-white">
+        <div className="relative flex min-h-[420px] flex-col justify-between rounded-[1.5rem] bg-gradient-to-br from-stone-900 via-stone-800 to-stone-700 p-8 text-white dark:from-stone-100 dark:via-stone-200 dark:to-stone-300 dark:text-stone-950">
           <div className="space-y-3">
-            <p className="text-sm uppercase tracking-[0.35em] text-stone-300">
+            <p className="text-sm uppercase tracking-[0.35em] text-stone-300 dark:text-stone-600">
               Featured Work
             </p>
             <h2 className="max-w-sm text-3xl font-semibold leading-tight">
@@ -51,12 +51,12 @@ export function Hero() {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <div className="rounded-3xl bg-white/10 p-4 backdrop-blur-sm">
-              <p className="text-sm text-stone-300">Best for</p>
+            <div className="rounded-3xl bg-white/10 p-4 backdrop-blur-sm dark:bg-stone-950/10">
+              <p className="text-sm text-stone-300 dark:text-stone-600">Best for</p>
               <p className="mt-2 text-lg font-medium">Portraits & editorials</p>
             </div>
-            <div className="rounded-3xl bg-white/10 p-4 backdrop-blur-sm">
-              <p className="text-sm text-stone-300">Based in</p>
+            <div className="rounded-3xl bg-white/10 p-4 backdrop-blur-sm dark:bg-stone-950/10">
+              <p className="text-sm text-stone-300 dark:text-stone-600">Based in</p>
               <p className="mt-2 text-lg font-medium">Thailand</p>
             </div>
           </div>
