@@ -4,13 +4,13 @@ export function PhotoGallery() {
   return (
     <section id="gallery" aria-labelledby="gallery-heading" className="space-y-8">
       <div className="space-y-3">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700 dark:text-amber-300">
           Photo Showcase
         </p>
-        <h2 id="gallery-heading" className="text-3xl font-semibold text-stone-950">
+        <h2 id="gallery-heading" className="text-3xl font-semibold text-stone-950 dark:text-white">
           Selected frames from recent stories.
         </h2>
-        <p className="max-w-2xl text-base leading-7 text-stone-600">
+        <p className="max-w-2xl text-base leading-7 text-stone-600 dark:text-stone-300">
           A curated mix of portrait sessions, travel work, and documentary-style
           images designed to feel intimate, cinematic, and timeless.
         </p>
@@ -20,7 +20,7 @@ export function PhotoGallery() {
         {galleryItems.map((item) => (
           <article
             key={item.id}
-            className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-sm"
+            className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-sm transition-colors dark:border-stone-700 dark:bg-stone-900"
           >
             <div
               className={`flex h-72 items-end bg-gradient-to-br ${item.accent} p-5`}
@@ -31,8 +31,8 @@ export function PhotoGallery() {
               </div>
             </div>
             <div className="space-y-2 p-5">
-              <h3 className="text-xl font-semibold text-stone-950">{item.title}</h3>
-              <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
+              <h3 className="text-xl font-semibold text-stone-950 dark:text-white">{item.title}</h3>
+              <p className="text-sm uppercase tracking-[0.2em] text-stone-500 dark:text-stone-400">
                 {item.location}
               </p>
             </div>
