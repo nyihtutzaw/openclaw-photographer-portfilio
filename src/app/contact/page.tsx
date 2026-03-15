@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/contact-form";
+import { AddressMap } from "@/components/address-map";
 import { Navbar } from "@/components/navbar";
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function ContactPage() {
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 py-8 sm:px-8 lg:px-12 lg:py-10">
         <Navbar />
         <ContactForm />
+        <AddressMap />
       </div>
     </main>
   );
