@@ -127,11 +127,20 @@ export function HeroSlider() {
           <button
             key={i}
             onClick={() => goTo(i)}
+            onKeyDown={(e) => {
+              if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prev();
+              } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                next();
+              }
+            }}
             aria-label={`Go to slide ${i + 1}`}
             className={`h-2 rounded-full transition-all duration-300 ${
               i === current
-                ? "w-6 bg-white"
-                : "w-2 bg-white/50 hover:bg-white/80"
+                ? "w-6 bg-white ring-2 ring-white ring-offset-2"
+                : "w-2 bg-white/50 hover:bg-white/80 focus:ring-2 focus:ring-white focus:outline-none"
             }`}
           />
         ))}
