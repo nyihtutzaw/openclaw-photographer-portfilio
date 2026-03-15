@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0] - 2026-03-15
+### Added
+- Multi-page routing: `/`, `/gallery`, `/contact` as separate pages
+- Shared `Navbar` component with Next.js Link routing and active link highlighting
+- Full-width auto-playing hero image slider (5 Unsplash photos, prev/next, dot indicators, pause on hover)
+- About section merged into home page alongside hero
+
+### Changed
+- Hero redesigned to full-width layout with text overlaid on image slider
+- CTA buttons now route to `/gallery` and `/contact` via Next.js Link
+- Removed `/about` route (content lives on home page)
+
 ## [Unreleased]
 
 ### Fixed
