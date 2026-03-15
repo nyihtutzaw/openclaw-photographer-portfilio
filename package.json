@@ -12,6 +12,7 @@
     "test:coverage": "NODE_ENV=test jest --coverage"
   },
   "dependencies": {
+    "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -32,6 +33,6 @@
     "jest-environment-jsdom": "^30.3.0",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.6",
-    "typescript": "^5"
+    "typescript": "5.9.3"
   }
 }

@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: "pattaya",
     title: "Pattaya Beach Sessions",
     description:
-      "Sun-soaked portraits along the Gulf of Thailand coast — golden hour light, open water, and effortless energy.",
+      "Sun-soaked portraits along the Gulf of Thailand coast - golden hour light, open water, and effortless energy.",
     location: "Pattaya, Thailand",
     category: "Lifestyle",
     coverImage:
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     id: "kalaw-pre-wedding",
     title: "Kalaw Pre-Wedding",
     description:
-      "A misty mountain love story in the highlands of Myanmar — pine forests, morning fog, and two people completely at ease with each other.",
+      "A misty mountain love story in the highlands of Myanmar - pine forests, morning fog, and two people completely at ease with each other.",
     location: "Kalaw, Myanmar",
     category: "Pre-Wedding",
     coverImage:
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     id: "ko-zin-graduation",
     title: "Ko Zin Graduation",
     description:
-      "A proud milestone captured with intention — the joy, relief, and quiet pride of a journey completed.",
+      "A proud milestone captured with intention - the joy, relief, and quiet pride of a journey completed.",
     location: "Yangon, Myanmar",
     category: "Portrait",
     coverImage:
@@ -145,7 +145,7 @@ export const photographerProfile = {
   intro:
     "Available for portraits, editorial work, intimate weddings, and destination sessions across Southeast Asia.",
   about: [
-    "I’m a photographer drawn to natural light, unforced moments, and images that feel cinematic without losing their warmth.",
+    "I'm a photographer drawn to natural light, unforced moments, and images that feel cinematic without losing their warmth.",
     "My work blends portraiture, travel storytelling, and documentary-inspired details to create galleries that feel personal and timeless.",
   ],
   stats: [
@@ -157,6 +157,15 @@ export const photographerProfile = {
     email: "hello@arianoor.studio",
     phone: "+66 90 000 0000",
     instagram: "@arianoor.studio",
+  },
+  address: {
+    street: "123 Wireless Road",
+    city: "Bangkok, Thailand 10110",
+    phone: "+66 90 000 0000",
+    email: "hello@arianoor.studio",
+    latitude: 13.7563,
+    longitude: 100.5658,
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.6839825471844!2d100.56577!3d13.75633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2e7b4c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2s123%20Wireless%20Road%2C%20Klong%20Toei%2C%20Bangkok%2010110!5e0!3m2!1sen!2sth!4v1234567890",
   },
 };
 
