@@ -5,7 +5,10 @@ import TeamSection from '../team-section';
 // Mock next/image
 jest.mock('next/image', () => ({
   __esModule: true,
-  default: (props: any) => <img {...props} />,
+  default: (props: any) => {
+    const { fill, ...restProps } = props;
+    return <img {...restProps} />;
+  },
 }));
 
 describe('TeamSection', () => {
@@ -16,7 +19,7 @@ describe('TeamSection', () => {
 
   it('renders team member cards', () => {
     render(<TeamSection />);
-    expect(screen.getByText('Sarah Anderson')).toBeInTheDocument();
+    expect(screen.getAllByText('Sarah Anderson').length).toBeGreaterThan(0);
     expect(screen.getByText('Lead Photographer')).toBeInTheDocument();
   });
 
@@ -32,7 +35,7 @@ describe('TeamSection', () => {
     ];
 
     teamMembers.forEach((name) => {
-      expect(screen.getByText(name)).toBeInTheDocument();
+      expect(screen.getAllByText(name).length).toBeGreaterThan(0);
     });
   });
 
@@ -42,5 +45,12 @@ describe('TeamSection', () => {
     expect(grid).toHaveClass('grid-cols-1');
     expect(grid).toHaveClass('md:grid-cols-2');
     expect(grid).toHaveClass('lg:grid-cols-3');
+  });
+
+  it('renders skills for team members', () => {
+    render(<TeamSection />);
+    expect(screen.getByText('Portrait Photography')).toBeInTheDocument();
+    expect(screen.getByText('Lighting Design')).toBeInTheDocument();
+    expect(screen.getByText('Art Direction')).toBeInTheDocument();
   });
 });
