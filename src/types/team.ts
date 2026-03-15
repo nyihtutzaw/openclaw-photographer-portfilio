@@ -4,4 +4,5 @@ export interface TeamMember {
   position: string;
   image: string;
   skills: string[];
+  motto: string;
 }

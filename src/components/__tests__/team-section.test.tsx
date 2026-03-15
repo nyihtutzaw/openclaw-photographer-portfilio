@@ -47,10 +47,10 @@ describe('TeamSection', () => {
     expect(grid).toHaveClass('lg:grid-cols-3');
   });
 
-  it('renders skills for team members', () => {
+  it('renders mottos for team members', () => {
     render(<TeamSection />);
-    expect(screen.getByText('Portrait Photography')).toBeInTheDocument();
-    expect(screen.getByText('Lighting Design')).toBeInTheDocument();
-    expect(screen.getByText('Art Direction')).toBeInTheDocument();
+    expect(screen.getByText(/Every moment tells a story/)).toBeInTheDocument();
+    expect(screen.getByText(/Vision without execution/)).toBeInTheDocument();
+    expect(screen.getByText(/Light shapes the world/)).toBeInTheDocument();
   });
 });
